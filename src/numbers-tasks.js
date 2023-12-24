@@ -236,11 +236,11 @@ function isPrime(n) {
  *   toNumber(new Number(42), 0) => 42
  */
 function toNumber(value, def) {
-  let c = Number(value);
-  if (value.NaN) {
-    c = def;
+  let v1 = Number.parseInt(value, 10);
+  if (Number.isNaN(v1)) {
+    v1 = def;
   }
-  return c;
+  return v1;
 }
 
 /**
