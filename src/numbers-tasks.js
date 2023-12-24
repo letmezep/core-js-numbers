@@ -271,7 +271,7 @@ function getCube(num) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
+function getFibonacciNumber(index) {
   throw new Error('Not implemented');
 }
 
@@ -305,8 +305,16 @@ function getSumToN(n) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  let sum = 0;
+  let tmp;
+  let n = num;
+  while (n) {
+    tmp = n % 10;
+    n = (n - tmp) / 10;
+    sum += tmp;
+  }
+  return sum;
 }
 
 /**
@@ -600,8 +608,8 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(min, max) {
+  return parseInt(Math.random() * (max - min) + min, 10);
 }
 
 /**
