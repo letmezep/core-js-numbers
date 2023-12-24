@@ -31,10 +31,11 @@ The task is to implement functions on different Core JS topics. This module requ
     *   'aa', 'bb' => 'aabb'
     *   'aa',''    => 'aa'
     *   '',  'bb'  => 'bb'
-    */
+    *
    function concatenateStrings(value1, value2) {
      throw new Error('Not implemented');
    }
+   
    ```
 
    Read the task description in the comment above the function. Try to understand the idea. You can see the tests prepared if you don't understand it.
